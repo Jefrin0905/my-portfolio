@@ -1,0 +1,140 @@
+/* Global Body */
+body {
+  /* Existing styles */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+
+/* Header */
+header {
+  background-color: #f0f0f0; /* Light gray */
+  margin: 0 0 20px 0;
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Navigation links */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00ffea;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0056b3; /* Darker blue */
+  transform: scale(1.1);
+}
+
+/* Main content */
+main {
+  background-color: #FAF5EF; /* Soft cream */
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+  max-width: 800px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Profile picture container */
+.profile-pic {
+  margin: 0 auto 20px auto; /* Center and margin below */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #009bff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-pic:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Typography */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: slideDown 1s ease-out;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.p1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Background Video Styles */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  transform: translate(-50%, -50%) scale(0.7); /* Zoomed out */
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.6); /* optional */
+}
+
+
+header, main {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  margin: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

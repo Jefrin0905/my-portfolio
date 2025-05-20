@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Jefrin</title>
+
+  <!-- External Styles and Fonts -->
+  <link rel="stylesheet" href="css/contact-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+
+  <style>
+    main {
+      background-color: #FAF5EF;
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 12px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 15px 0;
+      font-weight: 500;
+      color: #333;
+    }
+
+    a {
+      color: #00ffea;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects and Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="gif.html">GIF</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <p data-aos="fade-up">Email: <a href="mailto:jefrin.moses@gmail.com">jefrin.moses@gmail.com</a></p>
+    <p data-aos="fade-up" data-aos-delay="100">Phone: +91-9952309970</p>
+    <p data-aos="fade-up" data-aos-delay="200">City: Thoothukudi</p>
+    <p data-aos="fade-up" data-aos-delay="300">GitHub: <a href="https://github.com/Jefrin0905" target="_blank" rel="noopener noreferrer">Jefrin0905</a></p>
+    <p data-aos="fade-up" data-aos-delay="400">LinkedIn: <a href="https://www.linkedin.com/in/jefrin-moses-05858a195/" target="_blank" rel="noopener noreferrer">Jefrin Moses</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jefrin Harry Moses</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>

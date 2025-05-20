@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Jefrin</title>
+
+  <!-- External Styles and Fonts -->
+  <link rel="stylesheet" href="css/projects-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+
+  <style>
+    main {
+      background-color: #FAF5EF;
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 12px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-top: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    ul.centered-list {
+      list-style-type: disc;
+      display: inline-block;
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      color: #333;
+      font-weight: 600;
+      font-size: 18px;
+      max-width: 400px;
+    }
+
+    ul.centered-list li {
+      margin: 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <header>
+    <h1>My Projects and Certifications</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects and Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="gif.html">GIF</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 data-aos="fade-up">Certifications</h2>
+    <ul class="centered-list" data-aos="fade-up" data-aos-delay="100">
+      <li>IATA in Customer Service</li>
+      <li>Dangerous Goods</li>
+      <li>CIAL Training</li>
+      <li>MS Office</li>
+      <li>Discord Management</li>
+    </ul>
+
+    <h2 data-aos="fade-up" data-aos-delay="200">Projects</h2>
+    <ul class="centered-list" data-aos="fade-up" data-aos-delay="300">
+      <li>Tourism in Tamil Nadu</li>
+      <li>Cricket Umpiring app using Python and Django</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jefrin Harry Moses</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>

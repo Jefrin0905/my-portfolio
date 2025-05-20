@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GIF | Jefrin</title>
+
+  <!-- External Styles and Fonts -->
+  <link rel="stylesheet" href="css/gif.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+
+  <style>
+    .gif-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .gif-gallery img {
+      width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gif-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <header>
+    <h1>My GIF Collection</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects and Certifications</a>
+      <a href="contact.html">Contact</a>
+      <a href="gif.html">GIF</a>
+    </nav>
+  </header>
+
+<div class="content-wrapper">
+
+  <main>
+    <h2 data-aos="fade-up">Enjoy My GIFs!</h2>
+
+  <div class="gif-gallery" data-aos="fade-up" data-aos-delay="100">
+    <a href="gifs/DB.gif" download><img src="gifs/DB.gif" alt="GIF 1"></a>
+    <a href="gifs/V1.gif" download><img src="gifs/V1.gif" alt="GIF 2"></a>
+    <a href="gifs/V2.gif" download><img src="gifs/V2.gif" alt="GIF 3"></a>
+    <a href="gifs/V3.gif" download><img src="gifs/V3.gif" alt="GIF 4"></a>
+    <a href="gifs/V4.gif" download><img src="gifs/V4.gif" alt="GIF 5"></a>
+    <a href="gifs/V5.gif" download><img src="gifs/V5.gif" alt="GIF 6"></a>
+  </div>
+
+  </main>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jefrin Harry Moses</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
